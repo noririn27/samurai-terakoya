@@ -1,0 +1,6 @@
+PS C:\Users\ntaku\Documents\samurai\samurai_terakoya> git log --oneline 
+4375d48 (HEAD -> main) hello, Worldを追加
+
+PS C:\Users\ntaku\Documents\samurai\samurai_terakoya\git_challenge> git log --oneline
+f428952 (HEAD -> main) こんにちは、世界！を追加
+4375d48 hello, Worldを追加
