@@ -44,7 +44,7 @@ d1addb0 (HEAD -> main) hello_world.txtを追加
 
 PS C:\Users\ntaku\Documents\samurai\git_challenge> cat .\hello_world.txt
 Hello, world!
-縺薙ｓ縺ｫ縺｡縺ｯ縲∽ｸ也阜・
+こんにちは、世界！
 
 PS C:\Users\ntaku\Documents\samurai\git_challenge> git add .
 
