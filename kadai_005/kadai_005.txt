@@ -1,0 +1,63 @@
+PS C:\Users\ntaku\Documents\samurai> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\ntaku\Documents\samurai
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/03/02     10:52                git_challenge
+
+PS C:\Users\ntaku\Documents\samurai> cd .\git_challenge\
+
+PS C:\Users\ntaku\Documents\samurai\git_challenge> git init
+Initialized empty Git repository in C:/Users/ntaku/Documents/samurai/git_challenge/.git/
+
+PS C:\Users\ntaku\Documents\samurai\git_challenge> New-Item hello_world.txt
+
+
+    ディレクトリ: C:\Users\ntaku\Documents\samurai\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2025/03/02     10:57              0 hello_world.txt
+
+PS C:\Users\ntaku\Documents\samurai\git_challenge> git add .
+
+PS C:\Users\ntaku\Documents\samurai\git_challenge> git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world.txt
+
+PS C:\Users\ntaku\Documents\samurai\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) d1addb0] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+PS C:\Users\ntaku\Documents\samurai\git_challenge> git log --oneline
+d1addb0 (HEAD -> main) hello_world.txtを追加
+
+PS C:\Users\ntaku\Documents\samurai\git_challenge> cat .\hello_world.txt
+Hello, world!
+縺薙ｓ縺ｫ縺｡縺ｯ縲∽ｸ也阜・
+
+PS C:\Users\ntaku\Documents\samurai\git_challenge> git add .
+
+PS C:\Users\ntaku\Documents\samurai\git_challenge> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello_world.txt
+
+PS C:\Users\ntaku\Documents\samurai\git_challenge> git commit -m "日本語訳を追記"
+[main 769569c] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+PS C:\Users\ntaku\Documents\samurai\git_challenge> git log --oneline
+769569c (HEAD -> main) 日本語訳を追記
+d1addb0 hello_world.txtを追加
